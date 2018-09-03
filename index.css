@@ -22,6 +22,9 @@ body {
     padding: 0;
     background-image: url("giphy3.gif");
     background-size: cover;
+    position: relative;
+background-position:center;
+background-repeat:no-repeat;
 
   }
   /* Code for container as flex*/
@@ -95,27 +98,16 @@ body {
 .row {
     display: flex;
     flex-direction: row;
-    align-items: left;
+    align-items: column;
     margin-top: 5vh;
 }
 .row .my-image {
     border: 1px solid #35eea4;
     border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 0 3px 20px 0 #35eea4;
     box-shadow: 0px 3px 20px 2px #ffd11a;
     width: 20vw;
-
-
 }
 
-/* Code for image section background color change on hover*/
-.row .my-image:hover {
-  opacity: 0.5;
-    filter: alpha(opacity=50); /* For IE8 and earlier */
-    cursor: pointer;
-    box-shadow: 0 3px 20px 0 #35eea4;
-}
 
 @media only screen and (max-width: 725px) {
     .row {
@@ -146,6 +138,14 @@ animation-duration: 2s;
     margin-right: 10px;
     width: 30px;
 }
+
+
+
+
+
+
+
+
 /* Code for animation icon of connect with me  in paragarah section*/
 @keyframes slideinSubheader {
   from {
