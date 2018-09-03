@@ -1,0 +1,176 @@
+/* Code for changing wallpaper in background*/
+
+#b1 { background-image: url("giphy.gif");}
+#b2 { background-image: url("giphy2.gif"); }
+#b3 { background-image: url("giphy3.gif"); }
+#b4 { background-image: url("giphy.gif"); }
+#b5 { background-image: url("giphy2.gif"); }
+
+
+
+/* Code for defining layout of page*/
+:root {
+    font-size: 16px;
+}
+.responsive {
+    width: 100%;
+    height: auto;
+    align-content: center;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("giphy3.gif");
+    background-size: cover;
+
+  }
+  /* Code for container as flex*/
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 5vw;
+
+}
+/* Code for banner card */
+.banner .card {
+    background: transparent;
+    align-items: center;
+    border: 1px transparent #2c2c2c;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+/* Code for Heading as button */
+.banner .card .heading button {
+    background: none;
+    border: none;
+    border-radius: 5px;
+    color:#3366ff;
+    font-family: "Istok Web", sans-serif;
+    font-size: 2rem;
+    letter-spacing: 8px;
+    margin-top: 2vh;
+    padding: 10px;
+    text-transform: uppercase;
+    transition: box-shadow 0.3s linear 0.1s;
+    animation-duration: 2s;
+    animation-name: slideinSubheader ;
+}
+/* Code for Heading as button hover effect*/
+.banner .card .heading button:hover {
+    cursor: pointer;
+    box-shadow: 0 3px 20px 0 #ff6600;
+}
+
+.banner .card .sub-heading {
+    color:#ffff4d;
+    font-family: "Playfair Display", serif;
+    font-size: 2.3rem;
+    margin: 0;
+    padding: 0 5vw 2vw;
+}
+/* Code for sub Heading as button*/
+.banner .card .sub-heading button {
+    background: none;
+    border: none;
+    border-radius: 5px;
+    color:#3366ff;
+    font-family: "Istok Web", sans-serif;
+    font-size: 2rem;
+    letter-spacing: 8px;
+    margin-top: 2vh;
+    padding: 10px;
+    text-transform: uppercase;
+    transition: box-shadow 0.3s linear 0.1s;
+    animation-duration: 2s;
+    animation-name: slideinSubheader ;
+}
+/* Code for sub Heading as button hover effect*/
+.banner .card .sub-heading button:hover {
+    cursor: pointer;
+    box-shadow: 0 3px 20px 0 #35eea4;
+}
+
+/* Code for image section as flex*/
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    margin-top: 5vh;
+}
+.row .my-image {
+    border: 1px solid #35eea4;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 3px 20px 0 #35eea4;
+    box-shadow: 0px 3px 20px 2px #ffd11a;
+    width: 20vw;
+
+
+}
+
+/* Code for image section background color change on hover*/
+.row .my-image:hover {
+  opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+    cursor: pointer;
+    box-shadow: 0 3px 20px 0 #35eea4;
+}
+
+@media only screen and (max-width: 725px) {
+    .row {
+        flex-direction: column;
+    }
+    .row .image {
+        order: -1;
+    }
+    .row .my-image {
+        width: 60vw;
+    }
+}
+/* Code for paragarah section*/
+.paragraph {
+      color : DodgerBlue;
+      font-family: "Istok Web", sans-serif;
+      padding: 5vw 5vw 5vw 0;
+}
+/* Code for icon of technology in paragarah section*/
+.icon-group {
+
+margin-top: 1vh;
+animation-duration: 2s;
+
+}
+/* Code for icon of connect with me  in paragarah section*/
+.icon-group .icon {
+    margin-right: 10px;
+    width: 30px;
+}
+/* Code for animation icon of connect with me  in paragarah section*/
+@keyframes slideinSubheader {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+/* Change profile pics on hover*/
+
+   

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Jyoti Verma Portfolio</title>
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="index.css">
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Istok+Web:400,700" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="banner">
+            <div class="card">
+                <h1 class="heading" id = stepsId>
+                  <button class ="button"><jyoti>JYOTI VERMA</jyoti></button>
+
+                 </h1> 
+
+                <p class="sub-heading" id = stepsId>
+                  <br>
+                     <button class ="button"><jyoti> Mean Stack Developer Trainee</jyoti></button>
+                 </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="paragraph" id="stepsId">
+
+    <jyoti>
+              <b><ins>ABOUT ME !!</ins></b>
+
+
+                <br>
+
+                Hi !!!!!
+                <br>
+                This is Jyoti Verma, From Rajasthan which is also known as the “Land of Maharajas” is the largest state of India, I born in Ajmer city 112 km from Jaipur, I have completed Bachelor in technology from Govt College of Engineering Ajmer in Mechanical.
+                <br>
+                I pursue my leisure time to gain knowledge about fashion, learning dance steps, recently I have joined art of living to get the concentration habbit.
+            </jyoti>
+
+                <br>
+                <br>
+<jyoti>
+               <b> <ins>CAREER ABSTRACTS:</ins> </b>
+               <br>
+                   Worked as a Sr. lecturer in JECRC College of Engineering & Technology Sitapura Jaipur.
+               <br>
+                  6 yrs. Of teaching experience including experience as a counsellor in admission cell.
+               <br>
+                  Career counselling experience in Admission cell.
+               <br>
+                  Manage college events, and cultural evening.
+               <br>
+               <br>
+           </jyoti>
+           <jyoti>
+               <b> <ins>LOVE FOR TECH:</ins> </b>
+               <br>
+           </jyoti>
+    
+    
+
+                <div class="icon-group">
+                    <br>
+
+                    <img src="fullstack.png" class="icon"><jyoti> <b>Full Stack</b></jyoti>
+                    <br>
+                    <br>
+                    <img src="Workday.png" class="icon"><jyoti><b> Workday HCM </b> </jyoti>
+                    <br>
+                    <br>
+                    <img src="Mean.png" class="icon"><jyoti> <b> Mean Stack </b> </jyoti>
+                    <br>
+                    <br>
+                    <img src="aws.png" class="icon"><jyoti> <b> Amazon Web Services</b></jyoti> 
+                    
+                     <br>
+                    <br>
+
+  <jyoti>
+                     <b> <ins>Project Work:</ins> </b>
+                 </jyoti>
+
+                 <br>
+                 <br>
+                 <jyoti>
+                     
+                     Developing my own Portfolio using css and html.
+
+
+                 </jyoti>
+
+
+                </div>
+               <br> <br> <br>
+                <br> <b><jyoti><ins> Connect with me!!</ins></jyoti>
+                 <br>
+                  <br>
+                <br>
+                <div class="icon-group">
+                    <img src="outlook.png" class="icon">
+                    <img src="twitter.png" class="icon">
+                    <img src="linkedin.png" class="icon">
+                    <img src="instagram.png" class="icon">
+                </div>
+            </div>
+            <div class="image">
+                <img src="image1.jpg" class="my-image"class ="responsive">
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+
+    /* code for changing wallerpaper after 10000 miliseconds*/
+    function run(interval, frames) {
+    var int = 1;
+    
+    function func() {
+        document.body.id = "b"+int;
+        int++;
+        if(int === frames) { int = 1; }
+    }
+    
+    var swap = window.setInterval(func, interval);
+}
+
+run(10000, 5); //milliseconds, frames
+
+ /* code for changing text color after 10000 miliseconds*/
+
+
+var colors = ["#ff0000", "#bfff00", "#00ff00", "#0080ff", "#bf00ff"]
+var currentColor = 0
+var lis = document.querySelectorAll("#stepsId jyoti")
+function changeColor() {
+  --currentColor
+  if (currentColor < 0) currentColor = colors.length -1
+  for (var i = 0; i < lis.length; i++) {
+    lis[i].style.color = colors[(currentColor) % colors.length]
+  }
+}
+setInterval(changeColor, 10000)
+
+</script>
+
+
+
+
+</html>
